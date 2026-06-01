@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Violin Portfolio</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Oswald:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+
+<nav class="navbar">
+
+    <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="Logo">
+    </a>
+
+    <ul class="nav-links">
+
+        <li><a href="about.html">About</a></li>
+
+        <li><a href="featured.html">
+        Featured
+        </a></li>
+
+        <li><a href="portfolio.html">
+        Portfolio
+        </a></li>
+
+        <li><a href="contact.html">
+        Contact
+        </a></li>
+
+    </ul>
+
+    <div class="socials">
+
+    <a href="https://www.facebook.com/sydnie.mar.1">
+        <i class="fab fa-facebook"></i>
+    </a>
+
+    <a href="#">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+
+    <a href="#">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+</div>
+</nav>
+<section class="featured-section">
+
+    <h1 class="page-title">Featured Performances</h1>
+
+    <div class="featured-wrapper">
+
+        <!-- BOX 1 -->
+        <div class="featured-box">
+
+            <img src="images/featured1.JPG" alt="Performance 1">
+
+            <h3>Vivace Concert 2026</h3>
+
+            <p>
+                A violin performance featuring musicals performed in a formal concert setting.
+            </p>
+
+            <button onclick="openModal(
+                'images/featured1.JPG',
+                'Spring Recital 2024',
+                'Solo violin recital featuring Bach, Vivaldi, and classical works.'
+            )">
+                View Performance
+            </button>
+
+        </div>
+
+        <!-- BOX 2 -->
+        <div class="featured-box">
+
+            <img src="images/featured2.JPG" alt="Performance 2">
+
+            <h3>Chamber Ensemble Night</h3>
+
+            <p>
+                A collaborative performance with ensemble musicians
+                in Gallaga Theater.
+            </p>
+
+            <button onclick="openModal(
+                'images/featured2.JPG',
+                'Chamber Ensemble Night',
+                'String ensemble collaboration in a formal chamber setting.'
+            )">
+                View Performance
+            </button>
+
+        </div>
+
+        <!-- BOX 3 -->
+        <div class="featured-box">
+
+            <img src="images/featured3.JPG" alt="Performance 3">
+
+            <h3>Festival Appearance</h3>
+
+            <p>
+                A live performance showing contemporary violin pieces.
+            </p>
+
+            <button onclick="openModal(
+                'images/featured3.JPG',
+                'Festival Appearance',
+                'Live festival performance featuring modern violin repertoire.'
+            )">
+                View Performance
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<div id="modal" class="modal" role="dialog" aria-hidden="true">
+
+    <div class="modal-content">
+
+        <button class="close-btn" onclick="closeModal()">
+            &times;
+        </button>
+
+        <img id="modalImage" alt="Featured performance image">
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+    </div>
+
+</div>
+</header>
+</body>
